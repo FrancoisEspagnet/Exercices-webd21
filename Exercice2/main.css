@@ -196,6 +196,7 @@ footer nav li a{
     .recettes .container {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    /* le menu */
     #menuPrincipal{
         display: none;
     }
