@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma cuisine est bonne</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+        function menu() {
+        document.getElementById("menuPrincipal").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        } 
+    </script>
+</head>
+<body>
+    <header><!-- en-tête avec image en fond-->
+        <!--menu -->
+        <button onclick="menu()" class="dropbtn">Menu</button>
+        <nav id="menuPrincipal">
+            <ul>
+            <li><a href="#">Entrée</a>
+                <ul>
+                    <li><a href="#">Chaude</a></li>
+                    <li><a href="#">Froide</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Plat</a>
+                <ul>
+                    <li><a href="#">Le gras c'est la vie</a></li>
+                    <li><a href="#">Par pays</a></li>
+                    <li><a href="#">Diététique</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dessert</a>
+                <ul>
+                    <li><a href="#">Grand mère</a></li>
+                    <li><a href="#">Le chef</a></li>
+                    <li><a href="#"></a>Autres</li>
+                </ul>
+            </li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+        </nav>
+        <!--titre du site-->
+        <h1>Ma Cuisine est bonne</h1>
+    </header>
+    <section class="recettes"> <!-- contenu principal-->
+        <h1>Recettes</h1>
+        <div class="container">
+            <article><p><img src="images/clafouti.jpg" alt=""> Recette 1 blabla</p></article>
+            <article><p><img src="images/gateau-chocolat-398399_1280.jpg" alt=""> Recette 2 blabla</p></article>
+            <article><p><img src="images/gateaux.jpg" alt=""> Recette 3 blabla</p></article>
+            <article><p><img src="images/clafouti.jpg" alt=""> Recette 1 blabla</p></article>
+            <article><p><img src="images/gateau-chocolat-398399_1280.jpg" alt=""> Recette 2 blabla</p></article>
+            <article><p><img src="images/gateaux.jpg" alt=""> Recette 3 blabla</p></article>
+            <article><p><img src="images/clafouti.jpg" alt=""> Recette 1 blabla</p></article>
+            <article><p><img src="images/gateau-chocolat-398399_1280.jpg" alt=""> Recette 2 blabla</p></article>
+            <article><p><img src="images/gateaux.jpg" alt=""> Recette 3 blabla</p></article>
+        </div>
+    </section>
+    <section class="grille-avancee">
+        <h1>Grid avancée</h1>
+        <div class="container">
+            <div class="logo"></div>
+            <div class="navigation"></div>
+            <div class="content"></div>
+            <div class="menuDujour"></div>
+        </div>
+    </section>
+    <section class="flex">
+        <h1>Galerie</h1>
+        <div class="wrapper">
+            <img class="flex-1" src="https://via.placeholder.com/300.png/09f/fff" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/300.png/05f/fff" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/300.png/02f/fff" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/300.png/0f0/fff" alt="">
+            <img class="flex-2" src="https://via.placeholder.com/300.png/0c0/fff" alt="">
+            <img class="flex-2" src="https://via.placeholder.com/600.png/050/fff" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/300.png/f00/fff" alt="">
+            <img class="flex-1" src="https://via.placeholder.com/300.png/c00/fff" alt="">
+            <img class="flex-2  " src="https://via.placeholder.com/300.png/500/fff" alt="">
+        </div>
+    </section>
+        <!--Medias-->
+    <section>
+
+
+    </section>
+
+    <!-- PIed de page -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">RGPD</a></li>
+                <li><a href="#"Nous contacter></a></li>
+            </ul>
+           </nav>
+        <p><i>- Ma Cuisine est Bonne 2022 tous droits réservés</i></p>
+    </footer>
+</body>
+</html>

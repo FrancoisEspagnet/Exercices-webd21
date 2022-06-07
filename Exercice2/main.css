@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Grand Hotel";
+    src: url("fonts/GrandHotel-Regular.otf") format("opentype");
+}
+
+/*typographie*/
+h1, h2, h3{
+    font-family: "Grand Hotel", Arial, Helvetica, sans-serif;
+}
+header h1{
+    font-size: 64px;
+    animation: animation1 4s linear;
+}
+
+@keyframes animation1 {
+    from{
+        transform: scale(0%);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+
+@keyframes animation2 {
+    0%{
+        transform: scale(50%);
+        color: green;
+        opacity: 0.3;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: brown;
+    }
+    75%{
+        transform: scale(50%);
+        opacity: 0.3;
+        color: darkviolet;
+    }
+    100%{
+        transform: scale(100%);
+        color:white;
+        opacity: 1;
+    }
+}
+
+body{
+    margin: 0;
+}
+header{
+    background: url("images/bg_gateau_flou.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* menu*/
+header nav{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 20px;
+    position:fixed;
+    width: 100%;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    position:relative
+}
+nav li a{
+    text-decoration: none;
+    padding : 10px 5px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: black;
+    transition: all 1s;
+}
+
+/* sous menu*/
+nav ul li ul{
+    position: absolute;
+    top: 22px;
+    background-color: white;
+    width:fit-content;
+    padding: 5px 5px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+nav ul li:hover ul{
+    opacity: 1;
+}
+.dropbtn{
+    display: none;
+}
+/* titre principal */
+header h1{
+    text-align: center;
+    position: absolute;
+    margin-top:50vh;
+    top:-60px;
+    width: 100%;
+    color:white;
+    font-size: 120px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.684);
+}
+
+/* recettes */
+section{
+    margin: 20px 10%;
+}
+.recettes .container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.recettes article{
+    /*
+    width: 300px;*/
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.recettes p{
+    padding: 20px;
+}
+.recettes img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* pied de page */
+footer{
+    background: #555;
+    margin: 0;
+    padding: 20px;   
+    color: grey;
+}
+footer nav li a{
+    color: white;
+}
+
+/* grille avancée */
+.grille-avancee .container{
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-areas: 
+    "logo nav nav nav"
+    "content content menu menu"
+    "content content menu menu";
+}
+
+.logo{
+    grid-area: logo;
+     background: grey;
+}
+.navigation{
+    grid-area: nav;
+    background: deepskyblue;
+}
+.content{
+    grid-area: content;
+    background: darkseagreen;
+}
+.menuDujour{
+    grid-area: menu;
+    background: indianred;
+}
+
+/* flexbox */
+.flex .wrapper{
+    display: flex;
+    flex: content;
+    flex-wrap: wrap;
+}
+
+.flex-1{
+    flex:1;
+}
+.flex-2{
+    flex:2;
+}
+.flex-3{
+    flex:3;
+}
+
+/* responsive */
+@media screen and (max-width:768px) {
+    .recettes .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #menuPrincipal{
+        display: none;
+    }
+    .dropbtn{/*bouton */
+        display: block;
+        background-color: white;
+        border: none;
+        margin: auto;
+    }
+    .show{
+        display: block !important;
+    }
+    nav li{
+        display: list-item;
+    }
+}
+@media screen and (max-width:456px) {
+    .recettes .container {
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}

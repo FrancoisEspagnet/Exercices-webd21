@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Cuisine Est Bonne</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>  
+   <!-- ici mon commentaire -->
+    <div class="introduction">
+        <h1>Ma Cuisine Est Bonne</h1>
+        <p>Ce site vous propose des <strong>recettes</strong> sympas. <em>Vous allez vous régaler !</em></p>
+        <p>Lorem ipsum <i>dolor</i> sit <b>consectetur</b> adipisicing elit. Odio omnis magni voluptates tempore eius porro perferendis <b>amet aspernatur vel </b>ut obcaecati repudiandae aliquam, nulla voluptate, mollitia numquam, at alias sint!</p>
+    </div>
+    <!--
+    <div id="cookideco"></div>
+    -->
+
+    <div class="menu">
+        <nav>
+        <ul>
+            <li><a title="titre" href="pages/entrees.html">Entrées</a></li> 
+            <li> <a href="pages/plats.html">Plats</a> </li>
+            <li> <a href="pages/dessert.html">Desserts</a> </li>
+        </ul>
+        </nav>
+    </div>
+
+    <div class="recette-dujour">
+        <h2>Recette du jour : Gâteau au yaourt chocolat banane</h2>
+        <ol>
+            <li>Préchauffez le four à 150°C (thermostat 5).</li>
+            <li>Faites fondre le chocolat au bain marie</li>
+            <li>Mélangez le yaourt nature avec le sucre et le sucre vanillé.</li>
+            <li>Ajoutez les 2 œufs, la farine et l'huile, mélangez et mettez le chocolat fondu dans la préparation et ajoutez la levure chimique au dernier moment.</li>
+            <li>Coupez la banane en rondelles, mettez-en la moitié au fond d'un moule à cake de préférence anti-adhésif et versez la moitié de la préparation, ajoutez le reste de la banane et le reste de la préparation.</li>
+            <li>Vous pouvez dessiner la forme que vous voulez sur le gâteau avec du miel avant cuisson, succès garanti.</li>
+        </ol>
+    </div>
+        <div class="media-container">
+    <!-- Les médias -->
+        <audio autoplay controls loop >
+            <source src="medias/nocturne_in_e_flat_major_op.9no2.mp3" type="audio/mpeg">
+            <source src="medias/nocturne_in_e_flat_major_op.9no2.ogg" type="audio/ogg">
+        </audio>
+        <video src="medias/spring-blender-open-movie.mp4" controls width="600" height="auto" poster="medias/apercu_video.png"></video>
+    
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2FeLKpQf9zM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="liens">
+        <a href="https://www.marmiton.org/" target="_blank">Plus de recettes sur Marmiton</a>
+        <a href="mailto:formation@francois-espagnet.fr">Contactez moi !</a>
+        <a href="tel:+0612018259">Téléphone</a>
+    </div>
+    
+    <h2>Nos ateliers cuisine</h2>
+    <!-- On a généré le tableau avecc Emmet : table>tr*4>td*4 -->
+    <table>
+        <thead>
+        <tr>
+            <td>Jour</td>
+            <td>Heure de RDV</td>
+            <td>Heure de fin</td>
+            <td>Nombre de places disponibles</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>samedi 11 juin</td>
+            <td>09:00</td>
+            <td>13:00</td>
+            <td class="celuleSpeciale">8</td>
+        </tr>
+        <tr>
+            <td>samedi 30 juillet</td>
+            <td>09:00</td>
+            <td>13:00</td>
+            <td rowspan="2">11</td> <!-- rowspan ou colspan permettent de fusionner les celule ou plutôt de compléter la cellule suprimé-->
+        </tr>
+        <tr>
+            <td>samedi 27 août</td>
+            <td>09:00</td>
+            <td>13:00</td>
+       
+        </tr>
+    </tbody>
+    </table>
+
+    
+    <form action="mail.php" method="post">
+        <h2>Contactez Nous</h2>
+        <p>Remplissez tout les champs</p>
+        <label for="nomPrenom">Nom et Prénom</label>
+        <input type="text" placeholder="Prénom Nom" name="nomPrenom" id="nomForm">
+        <br>
+        <label for="mail">Votre email</label>
+        <input type="email" placeholder="mon.email@hebergeur.com" name="mail" id="mailForm" required>
+        <br>
+        <label for="tel">Numéro de téléphone</label>
+        <input type="tel" name="tel" id="teForm">
+
+        <p>Note du site</p>
+        <input type="radio" name="note" id="1radio" value="1"><label for="1radio">1</label>
+        <input type="radio" name="note" id="2radio" value="2"><label for="2radio">2</label>
+        <input type="radio" name="note" id="3radio" value="3"><label for="3radio">3</label>
+        <input type="radio" name="note" id="4radio" value="4"><label for="4radio">4</label>
+        <input type="radio" name="note" id="5radio" value="5"><label for="5radio">5</label>
+        <br>    
+        <label for="sujet">Sujet</label>
+        <select name="sujet" id="sujet" >
+            <option value="atelier">Réserver pour un atelier</option>
+            <option value="proposer">Proposer une recette</option>
+            <option value="partenaire">Devenir partenaire</option>
+            <option value="autre">Autre</option>
+        </select>
+        <br>
+        <label for="message">Votre message</label><br>
+        <textarea name="message" placeholder="entrez votre message ici" id="messageForm" cols="40" rows="10"></textarea>
+
+        <button type="submit">
+            <img src="images/cookies_102939.png" alt="">
+            Envoyez moi un gâteau !
+        </button>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Grand Hotel";
+    src: url("fonts/GrandHotel-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Roboto Slab Light";
+    src: url("fonts/RobotoSlabLight.ttf"), format("trutype");
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    
+    margin:0;
+}
+
+/* les titres */
+h1{
+    font-family: "Grand Hotel", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 72px; 
+    font-style: italic;
+    color: #fff;
+    opacity: 0.8;
+    border-bottom: 2px #fff solid;
+    border-radius: 40px;
+    width: 600px;
+    margin:auto;
+    line-height: 1;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 5px 2px darkturquoise;
+}
+h1+p{
+    text-align: center;
+}
+h3, h2{
+    font-size: 1.5em;
+    color: #35521c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+strong{
+    color: #bcfff2;
+}
+
+.marges-cotes{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#clafoutis{
+    color: brown;
+}
+.temperatures{
+    color: rgb(112, 0, 0);
+}
+
+/* fonds de la page d'accueil */
+.introduction{
+    background: url("images/bg_gateau_flou.jpg") #ffe4c46f fixed center no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 400px;  
+    padding: 100px 50px 30px 50px;
+}
+#cookideco{
+    background-image: url("images/cookies-pattern-background_9845-34.webp");
+    height: 100px       ;
+    background-repeat: repeat;
+}
+/* menu */
+nav{
+   background-color: rgba(128, 197, 174, 0.8);
+   padding: 10px 10px 15px 10px;
+   height: 20px;
+    margin: 0 0 30px 0;
+}
+nav ul{
+    margin : 0;
+}
+nav li {
+    list-style: none;
+    display:inline-block;
+}
+nav li a{
+    text-decoration: none;
+}
+nav li a:hover{
+    background: #65ffb0;
+    color: #2f7547;
+    text-decoration: underline;
+}
+/*
+nav li a:visited{
+    color: red;
+}
+*/
+nav li a::before{
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    content: "";
+    background: url('images/cookies_102939.png');
+    background-size: contain;
+}
+
+.recette-dujour {
+	background-color: beige;
+	color: rgb(123, 62, 0);
+	border: 4px solid #a0a083;
+	border-radius: 20px 5px 20px 5px;
+	width: 50%;
+	margin: auto;
+    background-image: url("images/cookies-pattern-background_9845-34.webp");
+}
+.recette-dujour h2{
+    margin-left:20px;
+}
+em{
+    font-style: normal;
+}
+.liens{
+    background-color: rgb(119, 102, 44);
+    width: 50%;
+    margin: 30px auto 30px auto;
+}
+
+.liens a{
+    color: #fff;
+}
+
+a[title]{
+    font-weight: bold;
+}
+
+.imageFlottante{
+    float:left;
+}
+
+/* recettes */
+#premiere-recette{
+    color: #208050;
+}
+
+/* lea tableaux */
+table{
+    background: rgba(255, 255, 255, 0.8);
+    border-collapse: collapse;
+    border-radius: 5px;
+    text-align: center;
+}
+table td{
+    border: 1px solid #208050;
+}
+
+table td:hover{
+    background-color: aqua;
+}
+table thead td:hover{
+    background-color: #208050;
+}
+table thead td{
+    background-color: #208050;
+    color: white;
+    font-weight: bold;
+}
+.celuleSpeciale{
+    background-color: brown;
+}
+.celuleSpeciale:hover{
+    background-color: chartreuse;
+}
+/* formulaire */
+form {
+	background-color: rgba(192, 221, 208, 0.8);
+	border-radius: 10px;
+	width: 50%;
+	margin: auto;
+	padding: 10px 30px;
+}
+form *:focus{
+    border:none;
+    box-shadow: #65ffb0 0 0 10px;
+}
+button img{
+    height: 100%;
+    width: auto;
+}
+button, textarea{
+    background-color: #208050;
+    color: #65ffb0;
+    border: none;
+    border-radius: 10px;
+}
+textarea:focus{
+    border-width: 0px;
+    box-shadow: #65ffb0 0 0 10px;
+}
+button{
+    font-size: 20px;
+    height: 32px;
+}
+button:hover{
+    background-color: #208050;
+    color:#65ffb0;
+}
+
+
+audio, video{
+    position: relative;
+    margin: auto;
+    display: block;
+}
