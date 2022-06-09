@@ -212,10 +212,23 @@ footer nav li a{
     nav li{
         display: list-item;
     }
+
 }
+header {
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+}
+
+.machinchose{
+
+}
+
+section p{}
 @media screen and (max-width:456px) {
     .recettes .container {
         grid-template-columns: 1fr 1fr ;
+        justify-content: ;
     }
     
 }
